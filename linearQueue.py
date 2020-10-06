@@ -37,7 +37,7 @@ class linQueue:
         else:
             print("Invalid item: not a string\n")
 
-#Method used to Dequeue an items
+#Method used to Dequeue an item
     def dequeue(self):
 #Checks if the queue is empty
         if not self.isEmpty():
