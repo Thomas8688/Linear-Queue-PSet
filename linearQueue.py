@@ -58,14 +58,6 @@ class linQueue:
         else:
             print("Queue is Empty: No items to Dequeue\n")
 
-#Method to peek the next item in the queue
-    def peek(self):
-#If the queue is not empty, the value at headP will be printed, otherwise an error message is displayed
-        if not self.isEmpty():
-            print("Next item in Queue:", self.__queue[self.__headP],"\n")
-        else:
-            print("Queue is Empty: No items to Peek\n")
-
 #Method to check if the queue is empty
     def isFull(self):
 #Checks if the queue is full by seeing if the tailpointer is at the maximum index of the queue
@@ -96,8 +88,6 @@ myQ.enqueue("Lily")
 nextInLine = myQ.dequeue()
 #Adds another value to the queue
 myQ.enqueue("Lucy")
-#Peeks the next item in the queue
-myQ.peek()
 
 #ERROR HANDLING TESTING
 myQ2 = linQueue(2)
@@ -105,12 +95,9 @@ myQ2 = linQueue(2)
 myQ2.enqueue("Lucy")
 myQ2.enqueue("Mark")
 myQ2.enqueue("Andrew")
-myQ2.peek()
 nextInLine2 = myQ2.dequeue()
 myQ2.enqueue("Andrew")
 #Queue Underflow
-myQ2.peek()
 myQ2.dequeue()
-myQ2.peek()
 myQ2.dequeue()
 myQ3 = linQueue("Hello")
